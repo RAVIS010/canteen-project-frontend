@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import { Toaster } from 'react-hot-toast';
 import Login from './components/login/Login';
 import AdminDashboard from './components/admin/Tabs/DashboardTab';
-import MessDashboard from './components/mess/Tabs/DashboardTab';
+import MessDashboard from './components/Mess/Tabs/DashboardTab';
 import UserDashboard from './components/User/Tabs/UserDashboardTab';
 import BillingPOS from './components/billing/Tabs/BillingPOS';
 
