@@ -1,7 +1,7 @@
 import '../Admin.css';
 import React from 'react';
 import { ChevronLeft } from 'lucide-react';
-import MessDashboard from '../../mess/Tabs/DashboardTab';
+import MessDashboard from '../../Mess/Tabs/DashboardTab';
 
 const ProductionViewTab = ({ setActiveTab, productionUnits, canteens }) => {
     return (
