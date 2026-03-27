@@ -876,24 +876,7 @@ const DashboardTab = () => {
                             </div>
                         )}
 
-                        {['user-creation', 'user-list'].includes(activeTab) && (
-                            <div className="user-header-switch">
-                                <button
-                                    type="button"
-                                    className={`user-header-switch-btn ${activeTab === 'user-creation' ? 'active' : ''}`}
-                                    onClick={() => setActiveTab('user-creation')}
-                                >
-                                    User Create
-                                </button>
-                                <button
-                                    type="button"
-                                    className={`user-header-switch-btn ${activeTab === 'user-list' ? 'active' : ''}`}
-                                    onClick={() => setActiveTab('user-list')}
-                                >
-                                    User List
-                                </button>
-                            </div>
-                        )}
+
 
                         <div className="header-actions" ref={notificationRef}>
                             <button className="icon-btn relative" onClick={() => setShowNotifications(!showNotifications)}>
@@ -941,6 +924,26 @@ const DashboardTab = () => {
                 </header>
 
                 <div className={`dashboard-body ${activeTab === 'user-creation' ? 'dashboard-body-fixed' : ''}`}>
+                    {['user-creation', 'user-list'].includes(activeTab) && (
+                        <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '20px' }}>
+                            <div className="user-header-switch">
+                                <button
+                                    type="button"
+                                    className={`user-header-switch-btn ${activeTab === 'user-creation' ? 'active' : ''}`}
+                                    onClick={() => setActiveTab('user-creation')}
+                                >
+                                    User Create
+                                </button>
+                                <button
+                                    type="button"
+                                    className={`user-header-switch-btn ${activeTab === 'user-list' ? 'active' : ''}`}
+                                    onClick={() => setActiveTab('user-list')}
+                                >
+                                    User List
+                                </button>
+                            </div>
+                        </div>
+                    )}
                     {renderContent()}
                 </div>
             </main>
