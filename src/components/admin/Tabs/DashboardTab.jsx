@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+﻿import React, { useState, useEffect, useCallback } from 'react';
 import toast from 'react-hot-toast';
 import {
     LayoutDashboard,
@@ -109,7 +109,7 @@ const DashboardTab = () => {
 
     // Dashboard Stats Derived State
     const stats = [
-        { label: 'TOTAL REVENUE', value: `₹ ${dashboardStats.totalRevenue.toLocaleString()}`, icon: <TrendingUp size={20} />, change: 'Today', path: null },
+        { label: 'TOTAL REVENUE', value: `â‚¹ ${dashboardStats.totalRevenue.toLocaleString()}`, icon: <TrendingUp size={20} />, change: 'Today', path: null },
         { label: 'TOTAL BILLS', value: dashboardStats.totalBills.toString(), icon: <FileText size={20} />, change: 'Breakdown', path: null, triggerModal: 'bills' },
         { label: 'PRODUCTION', value: `${productionUnits.length} Units`, icon: <Coffee size={20} />, change: 'Running', tab: 'cps-creation' },
         { label: 'CANTEENS', value: `${canteens.length} Active`, icon: <Store size={20} />, change: 'Online', tab: 'canteen-management' }
@@ -586,8 +586,7 @@ const DashboardTab = () => {
         { id: 'dashboard', name: 'Dashboard', icon: <LayoutDashboard size={20} /> },
         { id: 'cps-creation', name: 'CPS Creation', icon: <PlusCircle size={20} />, isSubOption: true },
         { id: 'canteen-management', name: 'Canteen Management', icon: <Store size={20} />, isSubOption: true },
-        { id: 'user-creation', name: 'User Creation', icon: <UserPlus size={20} /> },
-        { id: 'user-list', name: 'User List', icon: <Users size={20} /> },
+        { id: 'user-creation', name: 'Users', icon: <Users size={20} /> },
         { id: 'transfer-history', name: 'Transfer History', icon: <History size={20} /> },
         { id: 'sales-reports', name: 'Sales Reports', icon: <BarChart3 size={20} /> },
         { id: 'product-categories', name: 'Product Category', icon: <Layers size={20} /> },
