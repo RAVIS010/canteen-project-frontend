@@ -12,7 +12,7 @@ const UserCreationTab = ({
 }) => {
     return (
         <div className="content-card">
-            <h2>User Creation</h2>
+           
             <div className="form-grid">
                 <input
                     type="text"

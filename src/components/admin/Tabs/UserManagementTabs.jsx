@@ -35,7 +35,7 @@ const UserManagementTabs = ({
     if (activeTab === 'user-creation') {
         return (
             <div className="content-card user-create-card-medium">
-                <h2>User Creation</h2>
+               
                 <div className="form-grid">
                     <input
                         type="text"
