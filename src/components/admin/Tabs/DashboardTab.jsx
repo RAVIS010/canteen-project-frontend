@@ -877,24 +877,7 @@ const DashboardTab = () => {
                             </div>
                         )}
 
-                        {['user-creation', 'user-list'].includes(activeTab) && (
-                            <div className="user-header-switch">
-                                <button
-                                    type="button"
-                                    className={`user-header-switch-btn ${activeTab === 'user-creation' ? 'active' : ''}`}
-                                    onClick={() => setActiveTab('user-creation')}
-                                >
-                                    User Create
-                                </button>
-                                <button
-                                    type="button"
-                                    className={`user-header-switch-btn ${activeTab === 'user-list' ? 'active' : ''}`}
-                                    onClick={() => setActiveTab('user-list')}
-                                >
-                                    UserList
-                                </button>
-                            </div>
-                        )}
+                        {/* User navigation buttons removed as per user request */}
 
                         <div className="header-actions" ref={notificationRef}>
                             <button className="icon-btn relative" onClick={() => setShowNotifications(!showNotifications)}>
