@@ -1,4 +1,4 @@
-﻿import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import toast from 'react-hot-toast';
 import {
     LayoutDashboard,
@@ -876,7 +876,24 @@ const DashboardTab = () => {
                             </div>
                         )}
 
-                        {/* User navigation buttons removed as per user request */}
+                        {['user-creation', 'user-list'].includes(activeTab) && (
+                            <div className="user-header-switch">
+                                <button
+                                    type="button"
+                                    className={`user-header-switch-btn ${activeTab === 'user-creation' ? 'active' : ''}`}
+                                    onClick={() => setActiveTab('user-creation')}
+                                >
+                                    User Create
+                                </button>
+                                <button
+                                    type="button"
+                                    className={`user-header-switch-btn ${activeTab === 'user-list' ? 'active' : ''}`}
+                                    onClick={() => setActiveTab('user-list')}
+                                >
+                                    User List
+                                </button>
+                            </div>
+                        )}
 
                         <div className="header-actions" ref={notificationRef}>
                             <button className="icon-btn relative" onClick={() => setShowNotifications(!showNotifications)}>
