@@ -166,21 +166,7 @@ const UserManagementTabs = ({
     return (
         <div className="table-container">
                 <div className="table-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '15px' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '14px', flexWrap: 'wrap' }}>
-                        <h2 style={{ margin: 0, fontWeight: 900 }}>User List</h2>
-                        <span
-                            style={{
-                                background: '#2563eb',
-                                color: 'white',
-                                borderRadius: '100px',
-                                padding: '4px 14px',
-                                fontSize: '0.8rem',
-                                fontWeight: 800
-                            }}
-                        >
-                            {users.length} {users.length === 1 ? 'User' : 'Users'}
-                        </span>
-                    </div>
+                        {/* User List Title and Badge removed as per user request */}
                     <div
                         style={{
                             display: 'flex',
