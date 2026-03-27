@@ -13,7 +13,7 @@ const CanteenManagementTab = ({
         <div className="content-card animate-fadeIn canteen-management-card">
             <div className="canteen-management-header">
                 <div className="canteen-management-title">
-                    <
+                    
                 </div>
                 <div className="canteen-management-actions">
                     <button
