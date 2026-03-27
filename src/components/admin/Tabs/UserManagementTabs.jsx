@@ -165,7 +165,7 @@ const UserManagementTabs = ({
 
     return (
         <div className="table-container">
-                <div className="table-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '15px' }}>
+                <div className="table-header" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px', flexWrap: 'wrap', gap: '15px' }}>
                         {/* User List Title and Badge removed as per user request */}
                     <div
                         style={{
